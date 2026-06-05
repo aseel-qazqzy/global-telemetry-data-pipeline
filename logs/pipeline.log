@@ -1,0 +1,34 @@
+2026-06-05 21:19:55 [INFO] __main__: Kicking off data ingestion job batch: fc108534-c6e5-4b2e-bea8-3464c3ad7da0 at 2026-06-05 19:19:55.140166+00:00
+2026-06-05 21:19:55 [INFO] src.global_telemetry_data_pipeline.database: Connection to Docker PostgreSQL..
+2026-06-05 21:19:55 [INFO] src.global_telemetry_data_pipeline.database: Database raw data contract tables initialized successfully.
+2026-06-05 21:19:55 [INFO] __main__: Extracting live weather metrics for FRA airport...
+2026-06-05 21:19:55 [INFO] __main__: Extracted Air Data: {'airport_code': 'FRA', 'pm2_5': 3.8, 'pm10': 6.6, 'no2': 24.1}
+2026-06-05 21:19:55 [INFO] __main__: Extracting Flight telemetry Data...
+2026-06-05 21:19:55 [INFO] __main__: Extracted Flight telemetry Data [{'icao24': '39de4f', 'callsign': 'TVF27QD', 'longitude': 10.2846, 'latitude': 43.2304, 'altitude': 11582.4, 'velocity': 197.76}, {'icao24': 'a5f852', 'callsign': 'RTY484', 'longitude': -104.278, 'latitude': 40.4712, 'altitude': 2110.74, 'velocity': 54.06}, {'icao24': 'e8027c', 'callsign': 'LPE2442', 'longitude': -56.509, 'latitude': -34.6955, 'altitude': 2682.24, 'velocity': 155.01}, {'icao24': 'e48d22', 'callsign': 'PRMJM', 'longitude': -44.3544, 'latitude': -15.1781, 'altitude': 13106.4, 'velocity': 168.94}, {'icao24': 'a61867', 'callsign': 'N492K', 'longitude': -156.6836, 'latitude': 58.6923, 'altitude': 152.4, 'velocity': 46.27}, {'icao24': '39de4b', 'callsign': 'TVF28LP', 'longitude': -3.6058, 'latitude': 41.1504, 'altitude': 11582.4, 'velocity': 244.94}, {'icao24': '39de4a', 'callsign': 'TVF73RQ', 'longitude': 2.942, 'latitude': 50.0168, 'altitude': 10447.02, 'velocity': 239.34}, {'icao24': '39de4d', 'callsign': 'TVF8152', 'longitude': 2.6713, 'latitude': 46.4606, 'altitude': 11513.82, 'velocity': 233.57}, {'icao24': '39de4c', 'callsign': 'TVF27SZ', 'longitude': 12.2862, 'latitude': 44.9541, 'altitude': 10965.18, 'velocity': 218.66}, {'icao24': '39de57', 'callsign': 'TVF934S', 'longitude': -0.0988, 'latitude': 46.053, 'altitude': 11582.4, 'velocity': 263.59}, {'icao24': 'a77ec5', 'callsign': 'EJA582', 'longitude': -81.0687, 'latitude': 35.0589, 'altitude': 3208.02, 'velocity': 152.29}, {'icao24': '39de59', 'callsign': 'TVF235L', 'longitude': 6.1192, 'latitude': 46.9355, 'altitude': 11574.78, 'velocity': 196.33}, {'icao24': '39de58', 'callsign': 'TVF539X', 'longitude': 17.73, 'latitude': 44.1458, 'altitude': 11879.58, 'velocity': 245.42}, {'icao24': 'a0f57e', 'callsign': 'N161B', 'longitude': -84.3576, 'latitude': 41.519, 'altitude': 8145.78, 'velocity': 245.37}, {'icao24': '39de51', 'callsign': 'TVF4370', 'longitude': 13.9898, 'latitude': 49.9065, 'altitude': 3467.1, 'velocity': 177.01}]
+2026-06-05 21:28:32 [INFO] __main__: Kicking off data ingestion job batch: 79b0c24b-4424-4091-9b2f-bf4b0675f46d at 2026-06-05 19:28:32.740102+00:00
+2026-06-05 21:28:32 [INFO] src.global_telemetry_data_pipeline.database: Connection to Docker PostgreSQL..
+2026-06-05 21:28:32 [INFO] src.global_telemetry_data_pipeline.database: Database raw data contract tables initialized successfully.
+2026-06-05 21:28:32 [INFO] __main__: Extracting live weather metrics for FRA airport...
+2026-06-05 21:28:32 [INFO] __main__: Extracted Air Data: {'airport_code': 'FRA', 'pm2_5': 3.8, 'pm10': 6.6, 'no2': 24.1}
+2026-06-05 21:28:32 [INFO] __main__: Extracting Flight telemetry Data...
+2026-06-05 21:28:34 [INFO] __main__: Extracted Flight telemetry Data
+2026-06-05 21:28:34 [INFO] __main__: Insert data to raw_airport_air_quality .. 
+2026-06-05 21:28:34 [INFO] src.global_telemetry_data_pipeline.database: Connection to Docker PostgreSQL..
+2026-06-05 21:28:34 [INFO] src.global_telemetry_data_pipeline.database: Records inserted successfully into raw_airport_air_quality Table
+2026-06-05 21:28:34 [INFO] __main__: Data is inserted to the table..
+2026-06-05 21:28:34 [INFO] __main__: Insert data to raw_flight_telemetry .. 
+2026-06-05 21:28:34 [INFO] src.global_telemetry_data_pipeline.database: Connection to Docker PostgreSQL..
+2026-06-05 21:28:54 [INFO] __main__: Kicking off data ingestion job batch: 4705a938-60b7-4c0b-bc5f-ca0e23032241 at 2026-06-05 19:28:54.386917+00:00
+2026-06-05 21:28:54 [INFO] src.global_telemetry_data_pipeline.database: Connection to Docker PostgreSQL..
+2026-06-05 21:28:54 [INFO] src.global_telemetry_data_pipeline.database: Database raw data contract tables initialized successfully.
+2026-06-05 21:28:54 [INFO] __main__: Extracting live weather metrics for FRA airport...
+2026-06-05 21:28:54 [INFO] __main__: Extracted Air Data: {'airport_code': 'FRA', 'pm2_5': 3.8, 'pm10': 6.6, 'no2': 24.1}
+2026-06-05 21:28:54 [INFO] __main__: Extracting Flight telemetry Data...
+2026-06-05 21:28:58 [INFO] __main__: Extracted Flight telemetry Data
+2026-06-05 21:28:58 [INFO] __main__: Insert data to raw_airport_air_quality .. 
+2026-06-05 21:28:58 [INFO] src.global_telemetry_data_pipeline.database: Connection to Docker PostgreSQL..
+2026-06-05 21:28:58 [INFO] src.global_telemetry_data_pipeline.database: Records inserted successfully into raw_airport_air_quality Table
+2026-06-05 21:28:58 [INFO] __main__: Data is inserted to the table..
+2026-06-05 21:28:58 [INFO] __main__: Insert data to raw_flight_telemetry .. 
+2026-06-05 21:28:58 [INFO] src.global_telemetry_data_pipeline.database: Connection to Docker PostgreSQL..
+2026-06-05 21:28:58 [INFO] __main__: Data is inserted to the table..
