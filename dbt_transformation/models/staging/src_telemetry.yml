@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: postgres_raw
+    schema: public
+    description: "Raw landing telemetry feeds captured from global REST API endpoints."
+
+    tables:
+      - name: raw_flight_telemetry
+        description: "Live transponder states globally mapped by the OpenSky Network endpoint."
+        columns:
+          - name: icao42
+            tests:
+              - not_null
+      
+      - name: raw_airport_air_quality
+        description: "Particulate metrics captured around localized international aviation hubs."
+        columns:
+          - name: airport_code
+            tests:
+              - not_null

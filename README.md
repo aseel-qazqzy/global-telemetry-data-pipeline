@@ -14,6 +14,9 @@ cp .env.example .env   # then fill in any secrets
 ```bash
 python -m src.global_telemetry_data_pipeline.main
 ```
+```bash
+env: gtdp
+```
 
 ## Project layout
 - `src/global_telemetry_data_pipeline/` — application code

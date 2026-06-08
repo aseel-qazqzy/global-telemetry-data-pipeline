@@ -1,0 +1,14 @@
+# Profiles manifest capturing dynamically loaded environment credentials
+global_telemetry_profile:
+  target: dev
+  name: global_telemetry_profile
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      dbname: operational_telemetry
+      user: telemetry_admin
+      password: admin_secure_password_2026
+      port: 5432
+      schema: public
+      threads: 4

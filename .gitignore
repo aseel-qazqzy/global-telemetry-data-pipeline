@@ -1,4 +1,6 @@
 # Python
+gtdp/
+**/gtdp/
 __pycache__/
 *.py[cod]
 .venv/
@@ -21,3 +23,12 @@ data/processed/*
 .DS_Store
 .vscode/
 .idea/
+
+# Ignore local dbt compile logs and database targets
+dbt_transformation/logs/
+dbt_transformation/target/
+dbt_transformation/.user.yml
+*.log
+
+# Ignore local Airflow execution logs and downloaded compose manifests
+airflow/logs/

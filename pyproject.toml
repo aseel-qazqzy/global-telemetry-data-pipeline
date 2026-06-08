@@ -22,7 +22,9 @@ dependencies = [
     "psycopg2-binary>=2.9.9",
     "python-dotenv>=1.0.1",
     "requests>=2.31.0",
-    "pandas"
+    "pandas",
+    "dbt-core>=1.11.11",
+    "dbt-postgres>=1.9.0"
 ]
 
 [project.optional-dependencies]

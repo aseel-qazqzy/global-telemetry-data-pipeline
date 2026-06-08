@@ -1,0 +1,25 @@
+# Master dbt Project Configuration Manifest File
+name: "global_telemetry_transformations"
+version: "1.0.0"
+config-version: 2
+
+# Link this project file to the exact profile name
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshot"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+profile: global_telemetry_profile
+# Establishes the default materialization rules (Tables vs Views)
+models:
+  global_telemetry_transformations:
+    staging:
+      +materialized: view # staging layers should be fast, lightweight views
+    marts:
+      +materialized: table # Analytics layers should be physical tables for speed

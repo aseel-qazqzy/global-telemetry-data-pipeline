@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: fct_flight_environmental_impact
+    description: "Downstream analytical presentation table pairing live global aviation vectors to localized Frankfurt environmental impact snapshots via concurrent batch execution windows."
+    
+    # Enforce Analytics Quality Assurance Checks
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments: 
+            combination_of_columns:
+              - aircraft_id
+              - batch_id
+            
+    columns:
+      - name: batch_id
+        description: "The unique pipeline execution UUID tracking that precise moment in time."
+        tests:
+          - not_null
+          
+      - name: distance_score
+        description: "The calculated spatial proximity distance (in geometric degrees) from the aircraft to Frankfurt Airport's coordinates."
+        tests:
+          - not_null
