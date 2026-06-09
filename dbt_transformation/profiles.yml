@@ -5,7 +5,7 @@ global_telemetry_profile:
   outputs:
     dev:
       type: postgres
-      host: localhost
+      host: "{{ env_var('DB_HOST', 'localhost') }}"
       dbname: operational_telemetry
       user: telemetry_admin
       password: admin_secure_password_2026

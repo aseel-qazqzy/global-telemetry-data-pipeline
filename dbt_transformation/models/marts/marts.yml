@@ -7,10 +7,9 @@ models:
     # Enforce Analytics Quality Assurance Checks
     tests:
       - dbt_utils.unique_combination_of_columns:
-          arguments: 
-            combination_of_columns:
-              - aircraft_id
-              - batch_id
+          combination_of_columns:
+            - aircraft_id
+            - batch_id
             
     columns:
       - name: batch_id

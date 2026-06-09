@@ -9,7 +9,7 @@ sources:
       - name: raw_flight_telemetry
         description: "Live transponder states globally mapped by the OpenSky Network endpoint."
         columns:
-          - name: icao42
+          - name: icao24
             tests:
               - not_null
       
